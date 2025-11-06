@@ -10,9 +10,6 @@
     <p align="center">
         <img width="865" height="281" alt="image" src="https://github.com/user-attachments/assets/c3e299a3-f1ad-44a2-9a90-db056ee5702d" />
 
-
-    </p>
-
 [![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
 [![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
