@@ -8,9 +8,8 @@
 </h2>
 <div align="center">
     <p align="center">
-        <img width="565" height="520" alt="image" src="https://github.com/user-attachments/assets/d12d61bc-6d7e-4a82-bc4a-4246ce47b5ee" />
-        <img width="633" height="450" alt="image" src="https://github.com/user-attachments/assets/bad19c49-dc21-4504-89bb-f73c72714f45" />
-        <img width="823" height="652" alt="image" src="https://github.com/user-attachments/assets/d4e17ff2-38f1-4c30-910a-8f520e9bde3a" />
+        <img width="865" height="281" alt="image" src="https://github.com/user-attachments/assets/c3e299a3-f1ad-44a2-9a90-db056ee5702d" />
+
 
     </p>
 
