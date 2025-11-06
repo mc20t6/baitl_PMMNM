@@ -51,4 +51,76 @@ Hệ thống Quản lý Đoàn viên trong trường Đại học được xây 
 ### Trang đăng nhập
 <img width="872" height="678" alt="image" src="https://github.com/user-attachments/assets/73146dfd-a936-4213-8daa-ae81ce3d1be8" />
 <img width="868" height="773" alt="image" src="https://github.com/user-attachments/assets/612bf550-4e45-4439-a217-fea0dc8593cd" />
+### Trang dashboard admin
+<img width="1845" height="712" alt="image" src="https://github.com/user-attachments/assets/f38db97c-046a-4c57-820d-9f3d1107d801" />
+## ⚙️ 4. Cài đặt
+
+### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
+
+- Tải và cài đặt **XAMPP**  
+  👉 https://www.apachefriends.org/download.html  
+  (Khuyến nghị bản XAMPP với PHP 8.x)
+
+- Cài đặt **Visual Studio Code** và các extension:
+  - PHP Intelephense  
+  - MySQL  
+  - Prettier – Code Formatter  
+### 4.2. Tải project
+Clone project về thư mục `htdocs` của XAMPP (ví dụ ổ C):
+
+```bash
+cd C:\xampp\htdocs
+https://github.com/tyanzuq2811/BTL_Quan_ly_doan_vien.git
+Truy cập project qua đường dẫn:
+👉 http://localhost/authentication_login.
+```
+### 4.3. Setup database
+Mở XAMPP Control Panel, Start Apache và MySQL
+
+Truy cập MySQL WorkBench
+Tạo database:
+```bash
+CREATE DATABASE IF NOT EXISTS quan_ly_doan_vien
+   CHARACTER SET utf8mb4
+   COLLATE utf8mb4_unicode_ci;
+```
+
+### 4.4. Setup tham số kết nối
+Mở file config.php (hoặc .env) trong project, chỉnh thông tin DB:
+```bash
+
+<?php
+    function getDbConnection() {
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "quan_ly_doan_vien";
+        $port = 3306;
+        $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
+        if (!$conn) {
+            die("Kết nối database thất bại: " . mysqli_connect_error());
+        }
+        mysqli_set_charset($conn, "utf8");
+        return $conn;
+    }
+?>
+```
+### 4.5. Chạy hệ thống
+Mở XAMPP Control Panel → Start Apache và MySQL
+
+Truy cập hệ thống:
+👉 http://localhost/index.php
+
+### 4.6. Đăng nhập lần đầu
+Hệ thống có thể cấp tài khoản admin 
+
+Sau khi đăng nhập Admin có thể:
+
+Tạo thông tin tổ chức đoàn (Đoàn trường, Liên chi, Chi đoàn)
+
+Thêm đoàn viên và cấp tài khoản
+
+Quản lý phân quyền theo cấp
+
+
 
